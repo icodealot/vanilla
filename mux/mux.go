@@ -13,10 +13,10 @@ type RouteEntry struct {
 	method  string
 }
 
-// As per https://go.dev/blog/maps, map order is undefined
-// and not guaranteed to be the same. (a language decision)
+// HttpHandler As per https://go.dev/blog/maps, map order is
+// not guaranteed to be the same. (This is a language decision)
 // A sorted slice of string keys in the handler is used to
-// match routes most to least specific pattern.
+// match routes from the most to the least specific pattern.
 type HttpHandler struct {
 	// Keys will be method:route such as: "GET:/items"
 	// Could also use a struct key such as {string, string}
@@ -76,7 +76,7 @@ func (mux *HttpHandler) addRouteEntry(r string, h http.HandlerFunc, m string) {
 		return
 	}
 	sort.Slice(mux.sk, func(i, j int) bool { // readability over speed given a one time hit
-		return len(mux.sk[i]) > len(mux.sk[j]) // sort longest path to shortest
+		return len(mux.sk[i]) > len(mux.sk[j]) // sort the longest path to shortest
 	})
 }
 

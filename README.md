@@ -1,4 +1,5 @@
-# vanilla
+# vanilla/mux
+[![Build Status](https://github.com/icodealot/vanilla/actions/workflows/build.yml/badge.svg)](https://github.com/icodealot/vanilla/actions)
 [![GoDoc](https://godoc.org/github.com/icodealot/vanilla/mux?status.svg)](https://godoc.org/github.com/icodealot/vanilla/mux)
 
 An intentionally minimal and easy to use set of HTTP tools for Go projects including:
@@ -6,7 +7,7 @@ An intentionally minimal and easy to use set of HTTP tools for Go projects inclu
 * `vanilla/mux`: HTTP routing by method for Go projects
 * ...
 
-> General Caution: this module is simple and still in early stages of development. The API should stabilize over time at which point we will begin using semantic versions for the modules (consider this v0.0.0) and remove this warning.
+> Note: this module is minimal and still in early stages of development. The API should stabilize over time at which point we will begin using semantic versions for the modules (consider this v0.0.0) and remove this warning.
 
 ---
 
