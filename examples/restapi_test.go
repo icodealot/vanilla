@@ -1,5 +1,5 @@
 // Run this example with:
-// go test ./examples -run ^ExampleUsingHtmlTemplate -v
+// go test ./examples -run ^ExampleRestAPI -v
 // ...then open a web browser to http://localhost:8080/time
 //
 // Or, use cURL:
